@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package paqueteuno;
+package paquete01;
 
 /**
  *
  * @author reroes
  */
-public class Ejecutor {
+public class Ejecutor02 {
 
     public static void main(String[] args) {
         // se crea un de tipo UnidadDVD
@@ -20,10 +20,13 @@ public class Ejecutor {
         String procesador = "Intel";
         
         Computadora computadora = new Computadora(procesador, unidad);
+        
+        String variable_marca = computadora.obtenerTipoProcesador();
+        UnidadDVD variable_unidad = computadora.obtenerUnidadDvd();
         System.out.printf("Computadora:\nProcesador: %s\n"
                 + "Unidad de DVD: %s\n",
-                computadora.obtenerTipoProcesador(),
-                computadora.obtenerUnidadDvd().obtenerMarca());
+                variable marca,
+                variable_unidad.obtenerMarca());
     }
 
 }
